@@ -5,7 +5,7 @@ import { RifaProvider } from "./context/RifaContext";
 
 const App = () => {
   return (
-    <Router basename="/Rifa">
+    <Router basename="/Rifa/">
       <RifaProvider>
         <Routes>
           <Route path="/" element={<MainPage />} />
