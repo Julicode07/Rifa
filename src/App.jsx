@@ -1,12 +1,18 @@
-import "./index.css";
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import MainPage from "./pages/MainPage";
+import { RifaProvider } from "./context/RifaContext";
 
-function App() {
-
+const App = () => {
   return (
-    <>
-      <h1>Clean Code</h1>
-    </>
+    <Router basename="/Rifa">
+      <RifaProvider>
+        <Routes>
+          <Route path="/" element={<MainPage />} />
+        </Routes>
+      </RifaProvider>
+    </Router>
   );
-}
+};
 
 export default App;
