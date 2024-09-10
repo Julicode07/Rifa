@@ -2,7 +2,6 @@ import { initializeApp } from "firebase/app";
 import { getDatabase, ref, set, get } from "firebase/database";
 import { getAnalytics } from "firebase/analytics";
 
-// Configuración de Firebase usando variables de entorno
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
